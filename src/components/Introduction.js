@@ -8,11 +8,11 @@ export default function Introduction() {
       </div>
 
       <p className="small-text">
-        I am looking for an internship in
+       A Multimedia Designer with a focus on
       <mark className="neonblue"> Frontend Developement</mark>
       </p>
       <br></br>
-      <p className="small-text">Where i can improve my skills in</p>
+      <p className="small-text">I'm working on improving my skills in</p>
       <p className="neonblue skillz">HTML, CSS, JS and React.</p>
     </section>
   );

@@ -2,9 +2,6 @@
 
 body {
     color: #80FFFF;
-    
-    
-    
     padding: 0;
     margin: 0;
     font-family: 'darkmode-off', sans-serif;
@@ -89,12 +86,9 @@ p {
 
 
 @media screen and (min-width: 750px) {
-
     body{
-        background: rgb(6,8,49);
-    background: linear-gradient(300deg, rgba(6,8,49,1) 57%, rgba(22,26,98,1) 100%);
+    background: linear-gradient(300deg, #372248 57%, #414770 100%);
     }
-
 
     /*Availability*/
     .availability {
@@ -155,8 +149,6 @@ p {
         margin-top: 0;
     }
 
-
-
     /*Introduction Text*/
 
     .title {
@@ -190,7 +182,6 @@ p {
         margin-right: 20%;
         margin-top: 130px;
     }
-
 
     /* ---------- nav styling for the web view---------- */
     .socials-icons {
