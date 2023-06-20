@@ -87,7 +87,7 @@ p {
 
 @media screen and (min-width: 750px) {
     body{
-    background: linear-gradient(300deg, #372248 57%, #414770 100%);
+        background: #060831;
     }
 
     /*Availability*/
@@ -208,16 +208,74 @@ p {
 
 
     .lines {
-        padding-top: 20px;
-        padding-bottom: 20px;
         width: 2px;
         height: 100%;
         overflow: hidden;
     }
 
+ 
+.navlinks {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+
+.navlinks a {
+    display: block;
+    height: 100%;
+    font-size: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px #8e54e9;
+    transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    text-align: center;
+    padding: 0 10px;
+    margin-right: 30px;
+}
+
+    .navlinks a:after,
+    .navlinks a:before {
+        content: "";
+        position: absolute;
+        display: block;
+        border: 0px solid transparent;
+        width: 0%;
+        height: 0%;
+        transition: all 0.5s ease;
+    }
+
+    .navlinks a:after {
+        width: 0%;
+        height: 0%;
+        top: 0;
+        left: 0;
+        border-top: 2px solid transparent;
+        border-left: 2px solid transparent;
+    }
+
+    .navlinks a:before {
+        width: 0%;
+        height: 0%;
+        right: 0;
+        bottom: 0;
+        border-bottom: 2px solid transparent;
+        border-right: 2px solid transparent;
+    }
+
+    .navlinks a:hover::before,
+    .navlinks a:hover::after {
+        width: 100%;
+        height: 100%;
+        border-color: #fff;
+    }
+
 
     .navlinks {
-        position: absolute;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -245,37 +303,10 @@ p {
         letter-spacing: 0.1em;
         text-transform: uppercase;
         color: #80FFFF;
-        border: 2px solid #6919F6;
-        box-shadow: -3.5px 3.5px #80FFFF,
-            -3.5px 3.5px 0px 1.5px #6919F6;
         padding: 5px;
         margin: 15px;
-        background-color: #172650;
     }
 
-
-
-    /* Change the color of links on hover */
-    nav a:hover {
-        color: black;
-        border: 2px solid #6919F6;
-        box-shadow: -1.5px 1.5px #80FFFF,
-            -1.5px 1.5px 0px 1.5px #6919F6;
-
-        transform: translateY(1.5px);
-        background-color: #6919F6;
-    }
-
-    /* Add a color to the active/current link */
-    nav a.active {
-        color: black;
-        border: 2px solid #6919F6;
-        box-shadow: -1.5px 1.5px #80FFFF,
-            -1.5px 1.5px 0px 1.5px #6919F6;
-
-        transform: translateY(1.5px);
-        background-color: #6919F6;
-    }
 
     .EV {
         display: none;
@@ -287,10 +318,6 @@ p {
         position: fixed;
         right: 30px;
         top: 15px;
-
-        border: 2px solid #6919F6;
-        box-shadow: -3.5px 3.5px #80FFFF,
-            -3.5px 3.5px 0px 1.5px #6919F6;
         margin: 15px;
         background-color: #172650;
         padding: 10px;
@@ -298,9 +325,6 @@ p {
 
     .EV-web:active {
         color: #80FFFF;
-        border: 2px solid #6919F6;
-        box-shadow: -3.5px 3.5px #80FFFF,
-            -3.5px 3.5px 0px 1.5px #6919F6;
         margin: 15px;
         background-color: #172650;
  
@@ -308,11 +332,7 @@ p {
 
     .EV-web:active, .EV-web:hover, .EV-web:after{
         color: black;
-        border: 2px solid #6919F6;
-        box-shadow: -1.5px 1.5px #80FFFF,
-            -1.5px 1.5px 0px 1.5px #6919F6;
-        transform: translateY(1.5px);
-        background-color: #6919F6;
+        background-color: #f8f8f8;
 
     }
 
@@ -368,8 +388,6 @@ p {
         margin-right: auto;
         background-color: #80FFFF;
         color: black;
-        
-
     }
 
     .aboutme-box{
@@ -384,8 +402,6 @@ p {
         margin-left: auto;
         margin-right: auto;
         margin: 10px;
-        
-        
     }
 
     .skills-box{
@@ -422,10 +438,7 @@ p {
     .profile-picture{
         width: 310px;
         height: auto;
-        border: 2px solid #6919F6;
-        box-shadow: -3.5px 3.5px #80FFFF,
-            -3.5px 3.5px 0px 1.5px #6919F6;
-            background-color:#80FFFF;
+        background-color:#80FFFF;
     }
 
   
@@ -466,9 +479,6 @@ p {
         width: 400px;
         margin-left: auto;
         margin-right: auto;
-        border: 2px solid #6919F6;
-        box-shadow: -3.5px 3.5px #80FFFF,
-            -3.5px 3.5px 0px 1.5px #6919F6;
         margin-bottom: 30px;
     }
 
@@ -503,15 +513,13 @@ p {
         padding-bottom: 10px;
         display: block;
         width: 400px;
-font-weight: bold;
+        font-weight: bold;
         margin-left: auto;
+
         margin-right: auto;
     }
 
     /*---------------------------------Contact-----------------------------------------------*/
-
-
-   
 
     .title-contact {
         font-size: 70px;
@@ -774,10 +782,8 @@ font-weight: bold;
 
     .contact-button:hover, .contact-button:active .send-button:hover, .send-button:active{
         color: black;
-        box-shadow: -1.5px 1.5px #80FFFF,
-        -1.5px 1.5px 0px 1.5px #6919F6;
-    transform: translateY(1.5px);
-    background-color: #6919F6;
+        transform: translateY(1.5px);
+        background-color: #f8f8f8;
     }
 
 
@@ -799,9 +805,6 @@ font-weight: bold;
 
     .profile-picture {
         margin-top: 60px;
-        border: 2px solid #6919F6;
-        box-shadow: -3.5px 3.5px #80FFFF,
-            -3.5px 3.5px 0px 1.5px #6919F6;
         width: 50%;
         margin-bottom: 0px;
         background-color: #80FFFF;
@@ -842,9 +845,6 @@ font-weight: bold;
         width: 90%;
         margin-left: auto;
         margin-right: auto;
-        border: 2px solid #6919F6;
-        box-shadow: -3.5px 3.5px #80FFFF,
-            -3.5px 3.5px 0px 1.5px #6919F6;
     }
 
     .small-text-project {
@@ -914,9 +914,6 @@ font-weight: bold;
 
 /*Button styling border shadow*/
 .button {
-    border: 2px solid #6919F6;
-    box-shadow: -4.5px 4.5px #80FFFF,
-        -4.5px 4.5px 0px 1.5px #6919F6;
     text-align: center;
     padding: 20px;
     width: 100px;
@@ -925,12 +922,7 @@ font-weight: bold;
 
 .button:hover {
     color: black;
-    border: 2px solid #6919F6;
-    box-shadow: -1.5px 1.5px #80FFFF,
-        -1.5px 1.5px 0px 1.5px #6919F6;
-
-    transform: translateY(1.5px);
-    background-color: #6919F6;
+    background-color: #f8f8f8;
 }
 
 .button-text {
