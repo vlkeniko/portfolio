@@ -2,6 +2,7 @@ import gmail from "../images/gm.svg";
 import ln from "../images/ln.svg";
 import github from "../images/git.svg";
 import line3 from "../images/line3.svg";
+import CV from "../images/ENIKOCV.pdf";
 
 export default function SocialsIcons() {
   return (
@@ -22,12 +23,9 @@ export default function SocialsIcons() {
         <a href="https://github.com/vlkeniko">
           <img className="icon" src={github} alt="git" width="30" height="30" />
         </a>
-
-        <img className="icon bottom-line" src={line3} alt="blue line" />
+        <a href = {CV} target = "_blank">CV</a>  
+        <div class="vertical-line"></div>
       </div>
-      <a href="/" className="EV-web">
-        EV
-      </a>
     </>
   );
 }
